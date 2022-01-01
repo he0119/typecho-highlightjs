@@ -4,5 +4,5 @@
 
 ```bash
 cd typecho/usr/plugins
-git clone https://github.com/he0119/typecho-highlightjs.git highlightjs
+git clone https://github.com/he0119/typecho-highlightjs.git HighlightJs
 ```
