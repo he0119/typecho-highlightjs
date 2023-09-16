@@ -139,7 +139,7 @@ for (var i = 0; i < codes.length; i ++) {
         if (!highlighted) {
             var html = code.innerHTML;
             code.innerHTML = html.replace(/<\/?[a-z]+[^>]*>/ig, "");
-            hljs.highlightBlock(code, "", false);
+            hljs.highlightElement(code);
         }
     }
 }
