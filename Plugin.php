@@ -90,7 +90,7 @@ class Plugin implements PluginInterface
     public static function footer(Archive $archive)
     {
         if ($archive->is('single')) {
-            $jsUrl = Helper::options()->pluginUrl . '/HighlightJs/res/highlight.pack.js';
+            $jsUrl = Helper::options()->pluginUrl . '/HighlightJs/res/highlight.min.js';
             echo '<script type="text/javascript" src="' . $jsUrl . '"></script>';
             echo '<script type="text/javascript">window.onload = function () {
 var codes = document.getElementsByTagName("pre"),
