@@ -20,7 +20,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) {
  * @author joyqi
  * @version 1.1.0
  * @since 1.2.0
- * @link https://github.com/joyqi/typecho-plugins
+ * @link https://github.com/he0119/typecho-highlightjs
  */
 class Plugin implements PluginInterface
 {
