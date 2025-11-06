@@ -1,6 +1,10 @@
-# Typecho highlightjs
+# HighlightJs
 
-## 使用
+代码高亮
+
+## 安装
+
+下载插件，修改文件夹为 HighlightJs，上传到网站插件目录，后台启用。
 
 ```bash
 cd typecho/usr/plugins
