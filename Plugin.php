@@ -58,8 +58,12 @@ class Plugin implements PluginInterface
 
         $styles = array_map('basename', glob(dirname(__FILE__) . '/res/styles/*.css'));
         $styles = array_combine($styles, $styles);
-        $style = new Form\Element\Select('style', $styles, 'default.css',
-            _t('代码配色样式'));
+        $style = new Form\Element\Select(
+            'style',
+            $styles,
+            'default.css',
+            _t('代码配色样式')
+        );
         $form->addInput($style->addRule('enum', _t('必须选择配色样式'), $styles));
     }
 
@@ -117,7 +121,7 @@ for (var i = 0; i < codes.length; i ++) {
         if (!!className) {
             if (0 == className.indexOf("language-")) {
                 var lang = className.substring(5).toLowerCase(), finalLang;
-            
+
                 if (hlLangs[lang]) {
                     finalLang = lang;
                 } else {
